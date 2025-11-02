@@ -6,7 +6,7 @@ on:
 jobs:
   checkout-and-print:
     runs-on: ubuntu-latest
-    container: python:3.11
+
     steps:
       - name: checkout code
         uses: actions/checkout@v3
