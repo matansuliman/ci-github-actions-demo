@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  checkout-and-print:
+    runs-on: ubuntu-latest
+    container: python:3.11
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+
+      - name: print hello
+        run: |
+          echo "Hello, CI with GitHub Actions!."
